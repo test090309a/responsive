@@ -1,0 +1,98 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* The header with a full-width image background */
+.header {
+  background-image: url("lf2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50vh; /* Use vh to make it responsive */
+}
+
+/* The parallax scrolling effect */
+.parallax {
+  background-image: url("lf2.png");
+  min-height: 50vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The content section with a maximum width of 800px */
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* The form section with a white background and rounded corners */
+.form-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* The form inputs with some styling */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+/* The form button with some styling */
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+/* Change the button color on hover */
+.form-button:hover {
+  background-color: #3a8c40;
+}
+</style>
+</head>
+<body>
+
+<!-- The header with a full-width image background -->
+<div class="header">
+</div>
+<!-- The content section -->
+<div class="content">
+<h1>Senden Sie uns eine Nachricht</h1>
+<p>Wir freuen uns, von Ihnen zu hören.</p>
+
+<!-- The form section -->
+<div class="form-section">
+<form action="/action_page.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" class="form-input" placeholder="Ihr Name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" class="form-input" placeholder="Ihre Email-Adresse" required>
+<label for="message">Nachricht:</label>
+<textarea id="message" name="message" class="form-input" placeholder="Ihre Nachricht" rows="5" required></textarea>
+<button type="submit" class="form-button">Senden</button>
+</form>
+</div>
+</div>
+
+<!-- The parallax section -->
+<div class="parallax"></div>
+Hier ist ein HTML-Formular zum Absenden einer Nachricht. Es hat ein responsives Design und einen Parallax-Effekt. Sie können den Code in einem Code-Editor Ihrer Wahl testen.
+</body>
+</html>
